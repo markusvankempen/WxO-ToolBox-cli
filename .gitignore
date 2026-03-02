@@ -1,0 +1,19 @@
+# Environments
+.env
+
+# ToolBox Output Dir
+WxO/
+
+# MacOS
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
+
+# Python caching
+__pycache__/
+*.pyc
+
+# Node
+node_modules/

@@ -1,0 +1,8 @@
+{
+  "name": "WxO-ToolBox-cli",
+  "private": true,
+  "scripts": {
+    "compile": "cd vscode-extension && npm run compile",
+    "compile:extension": "cd vscode-extension && npm run compile"
+  }
+}
