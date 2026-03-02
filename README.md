@@ -1,6 +1,6 @@
-# WxO Importer/Export/Comparer/Validator
+# WxO-ToolBox-cli
 
-**Version:** 1.0.8
+**Version:** 1.0.9
 
 ---
 
@@ -10,7 +10,7 @@ CLI toolkit to move, compare, and validate IBM watsonx Orchestrate (WXO) resourc
 
 **Requires:** [orchestrate CLI](https://developer.watson-orchestrate.ibm.com/getting_started/installing) · `jq`
 
-Run the interactive menu: `./wxo_exporter_importer.sh` (see [Quick start](#quick-start)).
+Run the interactive menu: `./wxo-toolbox-cli.sh` (see [Quick start](#quick-start)).
 
 | Feature | What it does |
 |---------|--------------|
@@ -76,7 +76,7 @@ cp .env.example .env
 
 chmod +x wxo_exporter_importer.sh export_from_wxo.sh import_to_wxo.sh compare_wxo_systems.sh setup_dependencies.sh
 ./setup_dependencies.sh --install   # check/install orchestrate CLI, jq, unzip
-./wxo_exporter_importer.sh
+./wxo-toolbox-cli.sh
 ```
 
 **End-user guide:** See [USER_GUIDE.md](USER_GUIDE.md) for step-by-step instructions, UI walkthrough, and options for all use cases (Export, Import, Compare, Validate, Replicate).
@@ -85,7 +85,7 @@ chmod +x wxo_exporter_importer.sh export_from_wxo.sh import_to_wxo.sh compare_wx
 
 **VS Code extension:** [**wxo-toolkit-vsc**](https://github.com/markusvankempen/wxo-toolkit-vsc) — a standalone extension that bundles these CLI scripts and provides a webview UI. Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=markusvankempen.wxo-toolkit-vsc) or build from `vscode-extension/` in this repo. See [WxO-ADK-vscode-extension.md](WxO-ADK-vscode-extension.md).
 
-**Version:** Run `./wxo_exporter_importer.sh --version` or check [VERSION](VERSION). See [CHANGELOG.md](CHANGELOG.md) for release history.
+**Version:** Run `./wxo-toolbox-cli.sh --version` or check [VERSION](VERSION). See [CHANGELOG.md](CHANGELOG.md) for release history.
 
 ---
 
@@ -198,7 +198,7 @@ cp .env.example .env
 | `WXO_ROOT` | Override WxO output dir | `WXO_ROOT=/path/to/WxO` |
 | `ENV_FILE` | Override .env path | `ENV_FILE=/path/to/.env` (env var when running scripts) |
 
-**Where scripts look for .env:** (in order) `watson-orchestrate-builder/.env`, `watsonx-orchestrate-devkit/.env`, `wxo-toolkit/.env`. Override with `ENV_FILE=/path/to/.env ./wxo_exporter_importer.sh`.
+**Where scripts look for .env:** (in order) `watson-orchestrate-builder/.env`, `watsonx-orchestrate-devkit/.env`, `wxo-toolkit/.env`. Override with `ENV_FILE=/path/to/.env ./wxo-toolbox-cli.sh`.
 
 **Add new environment:** When adding via the interactive menu, the script prefills from `.env` if `WXO_URL_<name>` and `WXO_API_KEY_<name>` exist. Otherwise it prompts.
 
@@ -208,7 +208,7 @@ cp .env.example .env
 
 ## What's in here
 
-### 1. [`wxo_exporter_importer.sh`](wxo_exporter_importer.sh) — **Main interactive script**
+### 1. [`wxo-toolbox-cli.sh`](wxo-toolbox-cli.sh) — **Main interactive script**
 
 **What it does:**  
 1. List envs from `orchestrate env list` — choose or add new (prefills from `.env` if `WXO_URL_<name>`, `WXO_API_KEY_<name>` exist); [0] Exit.  
@@ -219,7 +219,7 @@ cp .env.example .env
 6. For Validate: select agents, test prompt; [0] Back.  
 7. Run the chosen script.
 
-**Guardrails:** Requires `orchestrate`, `jq`. Uses `.env` for API keys. Run `./wxo_exporter_importer.sh --version` for version info.
+**Guardrails:** Requires `orchestrate`, `jq`. Uses `.env` for API keys. Run `./wxo-toolbox-cli.sh --version` for version info.
 
 ### 2. [`import_to_wxo.sh`](import_to_wxo.sh)
 
@@ -320,7 +320,7 @@ https://developer.watson-orchestrate.ibm.com/getting_started/installing
 
 ```mermaid
 flowchart TD
-    A[./wxo_exporter_importer.sh] --> B[Select environment]
+    A[./wxo-toolbox-cli.sh] --> B[Select environment]
     B --> C{Choose action}
     C -->|1| D[Export: WXO to local]
     C -->|2| E[Import: local to WXO]
@@ -341,8 +341,8 @@ flowchart TD
 
 ```
 cd watsonXOrchestrate_auto_deploy
-chmod +x wxo_exporter_importer.sh export_from_wxo.sh import_to_wxo.sh compare_wxo_systems.sh
-./wxo_exporter_importer.sh
+chmod +x wxo-toolbox-cli.sh export_from_wxo.sh import_to_wxo.sh compare_wxo_systems.sh
+./wxo-toolbox-cli.sh
 ```
 
 The script will:
@@ -523,7 +523,7 @@ From the main menu, choose **[4] Validate** to invoke agents with a test prompt 
 
 | Script | What it does |
 |--------|--------------|
-| `wxo_exporter_importer.sh` | Interactive menu: Export, Import, Compare, Validate, Replicate |
+| `wxo-toolbox-cli.sh` | Interactive menu: Export, Import, Compare, Validate, Replicate |
 | `export_from_wxo.sh` | Exports agents, tools, flows to `WxO/Exports/` |
 | `import_to_wxo.sh` | Imports from `agents/`, `tools/`, `flows/` into WXO |
 | `compare_wxo_systems.sh` | Compares agents, tools, flows between two environments |
