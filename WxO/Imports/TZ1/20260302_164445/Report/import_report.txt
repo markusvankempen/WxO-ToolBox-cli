@@ -1,0 +1,38 @@
+=== Import Report 2026-03-02T16:44:58 ===
+
+  ═════════════════════════════════════════════════════════════════════════════════════════════
+  IMPORT REPORT
+  ═════════════════════════════════════════════════════════════════════════════════════════════
+  TYPE      NAME                                  STATUS        ID                        NOTES
+  ───────────────────────────────────────────────────────────────────────────────────────────
+  Tool      bamoe_integration                     ⏭ SKIPPED     -                         already exists
+  Tool      basic_auth_request                    ⏭ SKIPPED     -                         already exists
+  Tool      check_ticket_status                   ⏭ SKIPPED     -                         already exists
+  Tool      email_triage                          ⏭ SKIPPED     -                         already exists
+  Tool      format_address                        ⏭ SKIPPED     -                         already exists
+  Tool      get_asia_time                         ⏭ SKIPPED     -                         already exists
+  Tool      get_servicenow_headers                ⏭ SKIPPED     -                         already exists
+  Tool      markus_artifacts_zip                  ⏭ SKIPPED     -                         already exists
+  Tool      markus_artifacts_zip_fixed            ⏭ SKIPPED     -                         already exists
+  Tool      mvk                                   ⏭ SKIPPED     -                         already exists
+  Tool      pto_balance                           ⏭ SKIPPED     -                         already exists
+  Tool      request_software                      ⏭ SKIPPED     -                         already exists
+  Tool      reset_password                        ⏭ SKIPPED     -                         already exists
+  Tool      response_composer                     ⏭ SKIPPED     -                         already exists
+  Connection  WeatherAPI                            ⏭ SKIPPED     -                         already exists
+  Tool      Weather_Tool                          ⏭ SKIPPED     -                         already exists
+  Tool      getCityTime                           ⏭ SKIPPED     -                         already exists
+  Tool      getCurrentWeather                     ⏭ SKIPPED     -                         already exists
+  Tool      getCurrentWeatherv2                   ⏭ SKIPPED     -                         already exists
+  Connection  FerryWeather                          ⏭ SKIPPED     -                         already exists
+  Tool      getFerryWeather                       ✓ OK          d209095e-aa32-4b36-809    
+  Tool      getRandomJoke                         ⏭ SKIPPED     -                         already exists
+  Connection  1MVKweatherapi                        ⏭ SKIPPED     -                         already exists
+  Tool      getV1_currentjson                     ⏭ SKIPPED     -                         already exists
+  Connection  NewsAPI                               ⏭ SKIPPED     -                         already exists
+  Tool      searchEverything                      ⏭ SKIPPED     -                         already exists
+  ───────────────────────────────────────────────────────────────────────────────────────────
+  SUMMARY:  agents: ✓ 0 OK, ⏭ 0 skipped, ✗ 0 failed  |  tools: ✓ 1 OK, ⏭ 21 skipped, ✗ 0 failed  |  connections: ✓ 0 OK, ⏭ 4 skipped, ✗ 0 failed
+  ═════════════════════════════════════════════════════════════════════════════════════════════
+
+

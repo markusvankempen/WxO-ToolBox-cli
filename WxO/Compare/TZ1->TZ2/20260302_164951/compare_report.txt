@@ -1,0 +1,246 @@
+=== WXO System Comparison 2026-03-02T16:50:05 ===
+Systems: TZ1 vs TZ2
+
+  ═══════════════════════════════════════════════════════════════════════════════════
+  COMPARISON REPORT: TZ1  vs  TZ2
+  ═══════════════════════════════════════════════════════════════════════════════════
+
+  AGENTS
+  ─────────────────────────────────────────────────────────────────────────
+  NAME                                        TZ1       TZ2       DIFF
+  ─────────────────────────────────────────────────────────────────────────
+  askhr_agent                                 ✓       ✓       both
+  askorchestrate                              ✓       ✓       both
+  email_bamoe_processor                       ✓       ✓       both
+  itsupport_agent                             ✓       -         only TZ1
+  kjhkj_937751                                ✓       ✓       both
+  markusmultitoolsagent                       -         ✓       only TZ2
+  markusmultitoolsagenttz1                    ✓       ✓       both
+  name_address_agent                          ✓       ✓       both
+  wxobuildertestagent                         ✓       ✓       both
+  ziptestagent                                ✓       ✓       both
+  ─────────────────────────────────────────────────────────────────────────
+
+  TOOLS
+  ─────────────────────────────────────────────────────────────────────────
+  NAME                                        TZ1       TZ2       DIFF
+  ─────────────────────────────────────────────────────────────────────────
+  bamoe_integration                           ✓       ✓       both
+  basic_auth_request                          ✓       ✓       both
+  call_bamoe_flow_import_0                    -         ✓       only TZ2
+  check_ticket_status                         ✓       -         only TZ1
+  email_triage                                ✓       ✓       both
+  format_address                              ✓       ✓       both
+  get_asia_time                               ✓       ✓       both
+  get_servicenow_headers                      ✓       ✓       both
+  getcitytime                                 ✓       ✓       both
+  getcurrentweather                           ✓       ✓       both
+  getcurrentweatherv2                         ✓       ✓       both
+  getferryweather                             ✓       ✓       both
+  getrandomjoke                               ✓       ✓       both
+  getv1_currentjson                           ✓       ✓       both
+  i__get_flow_status_intrinsic_tool__         ✓       ✓       both
+  markus_artifacts_zip                        ✓       ✓       both
+  markus_artifacts_zip_fixed                  ✓       ✓       both
+  mvk                                         ✓       ✓       both
+  news_search                                 -         ✓       only TZ2
+  pto_balance                                 ✓       ✓       both
+  request_software                            ✓       ✓       both
+  reset_password                              ✓       -         only TZ1
+  response_composer                           ✓       ✓       both
+  rest_countries                              -         ✓       only TZ2
+  searcheverything                            ✓       ✓       both
+  tz2                                         -         ✓       only TZ2
+  weather_tool                                ✓       -         only TZ1
+  world_time                                  ✓       ✓       both
+  wxo-coingecko-demo:get_addresses_networks_  ✓       -         only TZ1
+  wxo-coingecko-demo:get_addresses_pools_net  ✓       -         only TZ1
+  wxo-coingecko-demo:get_addresses_tokens_ne  ✓       -         only TZ1
+  wxo-coingecko-demo:get_asset_platforms      ✓       -         only TZ1
+  wxo-coingecko-demo:get_coins_contract       ✓       -         only TZ1
+  wxo-coingecko-demo:get_coins_history        ✓       -         only TZ1
+  wxo-coingecko-demo:get_coins_markets        ✓       -         only TZ1
+  wxo-coingecko-demo:get_coins_top_gainers_l  ✓       -         only TZ1
+  wxo-coingecko-demo:get_exchanges_tickers    ✓       -         only TZ1
+  wxo-coingecko-demo:get_global               ✓       -         only TZ1
+  wxo-coingecko-demo:get_holding_chart_publi  ✓       -         only TZ1
+  wxo-coingecko-demo:get_id_coins             ✓       -         only TZ1
+  wxo-coingecko-demo:get_id_exchanges         ✓       -         only TZ1
+  wxo-coingecko-demo:get_id_nfts              ✓       -         only TZ1
+  wxo-coingecko-demo:get_id_simple_token_pri  ✓       -         only TZ1
+  wxo-coingecko-demo:get_list_coins_categori  ✓       -         only TZ1
+  wxo-coingecko-demo:get_list_exchanges       ✓       -         only TZ1
+  wxo-coingecko-demo:get_list_nfts            ✓       -         only TZ1
+  wxo-coingecko-demo:get_markets_nfts         ✓       -         only TZ1
+  wxo-coingecko-demo:get_network_networks_on  ✓       -         only TZ1
+  wxo-coingecko-demo:get_networks_onchain_de  ✓       -         only TZ1
+  wxo-coingecko-demo:get_networks_onchain_ne  ✓       -         only TZ1
+  wxo-coingecko-demo:get_new_coins_list       ✓       -         only TZ1
+  wxo-coingecko-demo:get_nfts_market_chart    ✓       -         only TZ1
+  wxo-coingecko-demo:get_onchain_categories   ✓       -         only TZ1
+  wxo-coingecko-demo:get_onchain_networks     ✓       -         only TZ1
+  wxo-coingecko-demo:get_pools_networks_onch  ✓       -         only TZ1
+  wxo-coingecko-demo:get_pools_networks_onch  ✓       -         only TZ1
+  wxo-coingecko-demo:get_pools_onchain_categ  ✓       -         only TZ1
+  wxo-coingecko-demo:get_pools_onchain_megaf  ✓       -         only TZ1
+  wxo-coingecko-demo:get_pools_onchain_trend  ✓       -         only TZ1
+  wxo-coingecko-demo:get_range_coins_market_  ✓       -         only TZ1
+  wxo-coingecko-demo:get_range_coins_ohlc     ✓       -         only TZ1
+  wxo-coingecko-demo:get_range_contract_coin  ✓       -         only TZ1
+  wxo-coingecko-demo:get_range_exchanges_vol  ✓       -         only TZ1
+  wxo-coingecko-demo:get_search               ✓       -         only TZ1
+  wxo-coingecko-demo:get_search_onchain_pool  ✓       -         only TZ1
+  wxo-coingecko-demo:get_search_trending      ✓       -         only TZ1
+  wxo-coingecko-demo:get_simple_price         ✓       -         only TZ1
+  wxo-coingecko-demo:get_simple_supported_vs  ✓       -         only TZ1
+  wxo-coingecko-demo:get_timeframe_pools_net  ✓       -         only TZ1
+  wxo-coingecko-demo:get_timeframe_tokens_ne  ✓       -         only TZ1
+  wxo-coingecko-demo:get_tokens_networks_onc  ✓       -         only TZ1
+  wxo-coingecko-demo:get_tokens_networks_onc  ✓       -         only TZ1
+  wxo-coingecko-demo:get_tokens_networks_onc  ✓       -         only TZ1
+  wxo-coingecko-demo:get_tokens_networks_onc  ✓       -         only TZ1
+  wxo-coingecko-demo:get_tokens_networks_onc  ✓       -         only TZ1
+  wxo-coingecko-demo:get_tokens_networks_onc  ✓       -         only TZ1
+  wxo-coingecko-demo:get_transaction_history  ✓       -         only TZ1
+  wxo-coingecko-demo:search_docs              ✓       -         only TZ1
+  ─────────────────────────────────────────────────────────────────────────
+
+  FLOWS
+  ─────────────────────────────────────────────────────────────────────────
+  NAME                                        TZ1       TZ2       DIFF
+  ─────────────────────────────────────────────────────────────────────────
+  name_address_form_flow                      ✓       ✓       both
+  org_cut_2_tools                             ✓       -         only TZ1
+  org_cut_2_tools_api                         ✓       -         only TZ1
+  org_cut_script                              ✓       -         only TZ1
+  org_cut_script_api                          ✓       -         only TZ1
+  org_cut_user_flow                           ✓       -         only TZ1
+  org_cut_user_flow_api                       ✓       -         only TZ1
+  sef_18762b_experimental_copy                ✓       -         only TZ1
+  sef_18762b_experimental_copy_api_import     ✓       -         only TZ1
+  simple_no_deps_flow                         ✓       ✓       both
+  simple_no_deps_flow_api                     ✓       -         only TZ1
+  simple_no_deps_flow_cli                     ✓       ✓       both
+  simple_one_dep_flow_api                     ✓       -         only TZ1
+  simple_one_dep_flow_cli                     ✓       -         only TZ1
+  ─────────────────────────────────────────────────────────────────────────
+
+  PLUGINS
+  ─────────────────────────────────────────────────────────────────────────
+  NAME                                        TZ1       TZ2       DIFF
+  ─────────────────────────────────────────────────────────────────────────
+  dad_joke_plugin                             ✓       -         only TZ1
+  greeting_prefix_plugin                      ✓       -         only TZ1
+  response_suffix_plugin                      ✓       -         only TZ1
+  ─────────────────────────────────────────────────────────────────────────
+
+  CONNECTIONS
+  ─────────────────────────────────────────────────────────────────────────
+  NAME                                        TZ1       TZ2       DIFF
+  ─────────────────────────────────────────────────────────────────────────
+  1mvkweatherapi                              ✓       ✓       both
+  a1_newsapi_org                              ✓       ✓       both
+  a1_weatherapi_com                           ✓       ✓       both
+  adobe_workfront_key_value_ibm_184bdbd3      ✓       ✓       both
+  adobe_workfront_oauth2_auth_code_ibm_184bd  ✓       ✓       both
+  ariba_approvals_key_value_ibm_184bdbd3      ✓       ✓       both
+  ariba_base_key_value_ibm_184bdbd3           ✓       ✓       both
+  ariba_buyer_key_value_ibm_184bdbd3          ✓       ✓       both
+  ariba_master_data_retrieval_ibm_184bdbd3    ✓       ✓       both
+  ariba_operational_procurement_synchronous_  ✓       ✓       both
+  ariba_soap_key_value_ibm_184bdbd3           ✓       ✓       both
+  ariba_supplier_key_value_ibm_184bdbd3       ✓       ✓       both
+  biw_nomination_biw_c539a2d8                 ✓       ✓       both
+  box_key_value_ibm_184bdbd3                  ✓       ✓       both
+  box_oauth2_auth_code_ibm_184bdbd3           ✓       ✓       both
+  coupa_key_value_ibm_184bdbd3                ✓       ✓       both
+  coupa_oauth2_auth_code_ibm_184bdbd3         ✓       ✓       both
+  datavault_api_key_datavault_5110eea5        ✓       ✓       both
+  decisym_bdr_key_value_decisym_02fe2ed5      ✓       ✓       both
+  dnb_base_key_value_ibm_184bdbd3             ✓       ✓       both
+  dnb_key_value_dnb_4c6e8dad                  ✓       ✓       both
+  dnb_procurement_key_value_ibm_184bdbd3      ✓       ✓       both
+  dnb_procurement_oauth2_client_credentials_  ✓       ✓       both
+  dnb_sales_key_value_ibm_184bdbd3            ✓       ✓       both
+  dnb_sales_oauth2_client_credentials_ibm_18  ✓       ✓       both
+  dropbox_key_value_ibm_184bdbd3              ✓       ✓       both
+  dropbox_oauth2_auth_code_ibm_184bdbd3       ✓       ✓       both
+  dynamics_365_ibm_184bdbd3                   ✓       ✓       both
+  facilities_management_connection            ✓       ✓       both
+  ferryweather                                ✓       ✓       both
+  finance_erp_connection                      ✓       ✓       both
+  gitlab_oauth2_auth_code_ibm_184bdbd3        ✓       ✓       both
+  google_key_value_ibm_184bdbd3               ✓       ✓       both
+  google_oauth2_auth_code_ibm_184bdbd3        ✓       ✓       both
+  hr_database_connection                      ✓       ✓       both
+  hubspot_key_value_ibm_184bdbd3              ✓       ✓       both
+  hubspot_oauth2_auth_code_ibm_184bdbd3       ✓       ✓       both
+  ibm_cos_key_value_ibm_184bdbd3              ✓       ✓       both
+  ibm_planning_analytics_basic_ibm_184bdbd3   ✓       ✓       both
+  ibm_planning_analytics_key_value_ibm_184bd  ✓       ✓       both
+  ibm_sip_oauth2_client_credentials_ibm_184b  ✓       ✓       both
+  ibm_targetprocess_bearer_ibm_184bdbd3       ✓       ✓       both
+  it_service_desk_connection                  ✓       ✓       both
+  jenkins_basic_ibm_184bdbd3                  ✓       ✓       both
+  jira_basic_ibm_184bdbd3                     ✓       ✓       both
+  jira_key_value_ibm_184bdbd3                 ✓       ✓       both
+  jira_oauth2_auth_code_ibm_184bdbd3          ✓       ✓       both
+  learning_management_connection              ✓       ✓       both
+  markusweather                               ✓       ✓       both
+  maximo_it_ibm_184bdbd3                      ✓       ✓       both
+  microsoft_ibm_184bdbd3                      ✓       ✓       both
+  microsoft_key_value_ibm_184bdbd3            ✓       ✓       both
+  microsoft_oauth2_auth_code_ibm_184bdbd3     ✓       ✓       both
+  nativemsg_rcs_nativemsg_15626a79            ✓       ✓       both
+  newsapi                                     ✓       ✓       both
+  onit_base_ibm_184bdbd3                      ✓       ✓       both
+  onit_lsr_ibm_184bdbd3                       ✓       ✓       both
+  onit_matter_ibm_184bdbd3                    ✓       ✓       both
+  oracle_fusion_basic_ibm_184bdbd3            ✓       ✓       both
+  oracle_hcm_basic_ibm_184bdbd3               ✓       ✓       both
+  oracle_hcm_key_value_ibm_184bdbd3           ✓       ✓       both
+  prisma_airs_key_value_paloalto_7ccd09d0     ✓       ✓       both
+  red_hat_ansible_ibm_184bdbd3                ✓       ✓       both
+  salesforce_key_value_ibm_184bdbd3           ✓       ✓       both
+  salesforce_oauth2_auth_code_ibm_184bdbd3    ✓       ✓       both
+  salesloft_key_value_ibm_184bdbd3            ✓       ✓       both
+  salesloft_oauth2_auth_code_ibm_184bdbd3     ✓       ✓       both
+  sap_s4_hana_basic_ibm_184bdbd3              ✓       ✓       both
+  sap_successfactors_basic_ibm_184bdbd3       ✓       ✓       both
+  sap_successfactors_ibm_184bdbd3             ✓       ✓       both
+  sap_successfactors_key_value_ibm_184bdbd3   ✓       ✓       both
+  seismic_key_value_ibm_184bdbd3              ✓       ✓       both
+  seismic_oauth2_auth_code_ibm_184bdbd3       ✓       ✓       both
+  servicenow_bearer_ibm_184bdbd3              ✓       ✓       both
+  servicenow_ibm_184bdbd3                     ✓       ✓       both
+  servicenow_key_value_ibm_184bdbd3           ✓       ✓       both
+  servicenow_oauth2_auth_code_ibm_184bdbd3    ✓       ✓       both
+  slack_bearer_ibm_184bdbd3                   ✓       ✓       both
+  slack_key_value_ibm_184bdbd3                ✓       ✓       both
+  slack_oauth2_auth_code_ibm_184bdbd3         ✓       ✓       both
+  sparkcompass_news_api_key_sparkcompass_bbb  ✓       ✓       both
+  sterling_oms_basic_ibm_184bdbd3             ✓       ✓       both
+  sterling_oms_key_value_ibm_184bdbd3         ✓       ✓       both
+  testrail_ibm_184bdbd3                       ✓       ✓       both
+  travel_booking_connection                   ✓       ✓       both
+  twilio_basic_ibm_184bdbd3                   ✓       ✓       both
+  uptok_api_key_uptok_1917c351                ✓       ✓       both
+  visa_key_value_visa_3f501a14                ✓       ✓       both
+  watson_commerce_key_value_ibm_184bdbd3      ✓       ✓       both
+  watson_commerce_oauth2_client_credentials_  ✓       ✓       both
+  watsonx_connection                          ✓       ✓       both
+  weatherapi                                  ✓       ✓       both
+  workday_base_key_value_ibm_184bdbd3         ✓       ✓       both
+  workday_employee_key_value_ibm_184bdbd3     ✓       ✓       both
+  workday_manager_key_value_ibm_184bdbd3      ✓       ✓       both
+  workday_oauth2_auth_code_ibm_184bdbd3       ✓       ✓       both
+  zendesk_ibm_184bdbd3                        ✓       ✓       both
+  zendesk_key_value_ibm_184bdbd3              ✓       ✓       both
+  zoominfo_key_value_ibm_184bdbd3             ✓       ✓       both
+  zoominfo_oauth2_auth_code_ibm_184bdbd3      ✓       ✓       both
+  ─────────────────────────────────────────────────────────────────────────
+
+  Legend: ✓ = present  |  - = absent  |  both = in both  |  only X = only in X
+  ═══════════════════════════════════════════════════════════════════════════════════
+
+

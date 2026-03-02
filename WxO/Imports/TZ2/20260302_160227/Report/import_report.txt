@@ -1,0 +1,19 @@
+=== Import Report 2026-03-02T16:03:04 ===
+
+  ═════════════════════════════════════════════════════════════════════════════════════════════
+  IMPORT REPORT
+  ═════════════════════════════════════════════════════════════════════════════════════════════
+  TYPE      NAME                                  STATUS        ID                        NOTES
+  ───────────────────────────────────────────────────────────────────────────────────────────
+  Connection  1MVKweatherapi                        ✓ OK          -                         credentials not set (no .env_connection file)
+  Connection  A1_newsapi_org                        ✓ OK          -                         credentials not set (no .env_connection file)
+  Connection  A1_weatherapi_com                     ✓ OK          -                         credentials not set (no .env_connection file)
+  Connection  FerryWeather                          ✓ OK          -                         credentials not set (no .env_connection file)
+  Connection  MarkusWeather                         ✓ OK          -                         credentials not set (no .env_connection file)
+  Connection  NewsAPI                               ✓ OK          -                         credentials not set (no .env_connection file)
+  Connection  WeatherAPI                            ✓ OK          -                         credentials not set (no .env_connection file)
+  ───────────────────────────────────────────────────────────────────────────────────────────
+  SUMMARY:  agents: ✓ 0 OK, ⏭ 0 skipped, ✗ 0 failed  |  tools: ✓ 0 OK, ⏭ 0 skipped, ✗ 0 failed  |  connections: ✓ 7 OK (0 creds set), ⏭ 0 skipped, ✗ 0 failed
+  ═════════════════════════════════════════════════════════════════════════════════════════════
+
+
