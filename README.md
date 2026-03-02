@@ -2,6 +2,8 @@
 
 **Version:** 1.0.9
 
+*Old repository available here: [WxO-Importer-Export-Comparer-Validator](https://github.com/markusvankempen/WxO-Importer-Export-Comparer-Validator)*
+
 ---
 
 ## Quick overview
@@ -74,7 +76,7 @@ Inspired by **Ajit Kulkarni** <ajit.kulkarni2@ibm.com>.
 cp .env.example .env
 # Edit .env with your WXO_URL_<ENV> and WXO_API_KEY_<ENV>
 
-chmod +x wxo_exporter_importer.sh export_from_wxo.sh import_to_wxo.sh compare_wxo_systems.sh setup_dependencies.sh
+chmod +x wxo-toolbox-cli.sh export_from_wxo.sh import_to_wxo.sh compare_wxo_systems.sh setup_dependencies.sh
 ./setup_dependencies.sh --install   # check/install orchestrate CLI, jq, unzip
 ./wxo-toolbox-cli.sh
 ```
