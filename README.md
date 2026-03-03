@@ -2,8 +2,6 @@
 
 **Version:** 1.0.9
 
-*Old repository available here: [WxO-Importer-Export-Comparer-Validator](https://github.com/markusvankempen/WxO-Importer-Export-Comparer-Validator)*
-
 ---
 
 ## Quick overview
